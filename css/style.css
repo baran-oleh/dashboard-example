@@ -43,20 +43,28 @@ body {
     min-width: 150px; }
   .aside__nav-list {
     list-style: none; }
-  .aside__nav-item {
-    font-family: "Roboto", sans-serif;
+  .aside__nav-link, .aside__settings-link {
+    text-decoration: none;
     color: #fff;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 15px;
     display: flex;
-    align-items: center; }
-    .aside__nav-item > svg {
+    align-items: center;
+    transition: all .3s; }
+    .aside__nav-link > svg, .aside__settings-link > svg {
       margin-right: 10px; }
-    .aside__nav-item:last-child {
+    .aside__nav-link:last-child, .aside__settings-link:last-child {
       margin-bottom: 0; }
-  .aside__settings {
-    grid-area: 6 / 1 / 7 / 2; }
+    .aside__nav-link:hover, .aside__settings-link:hover {
+      transform: scale(1.1); }
+  .aside__nav-item, .aside__settings-item {
+    margin-bottom: 30px; }
+    .aside__nav-item:last-child, .aside__settings-item:last-child {
+      margin-bottom: 0; }
+  .aside__settings-list {
+    grid-area: 6 / 1 / 7 / 2;
+    list-style: none; }
 
 .main {
   grid-area: 2 / 2 / 6 / 7;

@@ -34,14 +34,16 @@
     &__nav-list {
         list-style: none;
     }
-    &__nav-item{
-        font-family: $font;
+    &__nav-link,
+    &__settings-link{
+        text-decoration: none;
         color: $aside-font-color;
+        font-family: $font;
         font-weight: 500;
         font-size: 20px;
-        margin-bottom: 15px;
         display: flex;
         align-items: center;
+        transition: all .3s;
         &>svg {
             margin-right: 10px;
         }
@@ -49,9 +51,22 @@
         &:last-child{
             margin-bottom: 0;
         }
+        &:hover{
+            transform: scale(1.1);
+           
+        }
+    }
+    &__nav-item,
+    &__settings-item{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
-    &__settings{
+    &__settings-list{
         grid-area: 6 / 1 / 7 / 2;
+        list-style: none;
     }
+
 }
