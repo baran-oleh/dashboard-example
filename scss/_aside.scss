@@ -1,0 +1,57 @@
+.aside{
+    grid-area: 1 / 1 / 6 / 2; 
+    
+    background-color: $aside-bg;
+    padding: 32px 5px 20px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    &__logo{
+        grid-area: 1 / 1 / 2 / 2;
+
+        display: flex;
+        width: 70%;
+        min-width: 150px;
+        align-items: center;
+        & > svg {
+            margin-right: 10px;
+        }
+        
+    }
+    
+    &__title {
+        font-family: $font;
+        color: $aside-font-color;
+    }
+    &__nav{
+        grid-area: 3 / 1 / 4 / 2;
+        width: 70%;
+        min-width: 150px;
+    }
+    &__nav-list {
+        list-style: none;
+    }
+    &__nav-item{
+        font-family: $font;
+        color: $aside-font-color;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        &>svg {
+            margin-right: 10px;
+        }
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__settings{
+        grid-area: 6 / 1 / 7 / 2;
+    }
+}
