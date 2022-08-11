@@ -61,7 +61,7 @@
 
     &__right{
         flex-basis: 33%;
-
+        max-width: 370px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -71,6 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding-right: 25px;
     }
     &__right-one-alert{
         width: 25px;
@@ -79,6 +80,7 @@
         & svg {
             width: inherit;
             height: inherit;
+            animation: alert-icon .5s infinite ;
         }
     }
     &__right-one-avatar{

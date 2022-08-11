@@ -13,6 +13,11 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px; }
 
+@keyframes alert-icon {
+  0% {
+    transform: scale(); }
+  100% {
+    transform: scale(1.2); } }
 .header {
   grid-area: 1 / 2 / 2 / 7;
   padding: 20px 20px 15px 20px;
@@ -60,20 +65,23 @@ body {
       font-weight: 500; }
   .header__right {
     flex-basis: 33%;
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
   .header__right-one {
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    padding-right: 25px; }
   .header__right-one-alert {
     width: 25px;
     height: 25px;
     margin-right: 20px; }
     .header__right-one-alert svg {
       width: inherit;
-      height: inherit; }
+      height: inherit;
+      animation: alert-icon 0.5s infinite; }
   .header__right-one-avatar {
     width: 40px;
     height: 40px;
