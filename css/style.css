@@ -160,4 +160,43 @@ body {
 .main {
   grid-area: 2 / 2 / 6 / 7;
   border: 1px solid black;
-  background-color: #E2E8F0; }
+  background-color: #E2E8F0;
+  padding: 30px 30px 60px 15px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; }
+  .main__title {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid black; }
+  .main__one {
+    grid-area: 2 / 1 / 5 / 4;
+    border: 1px solid black; }
+  .main__two {
+    grid-area: 2 / 4 / 5 / 7;
+    border: 1px solid black; }
+  .main__three {
+    grid-area: 5 / 1 / 8 / 4;
+    border: 1px solid black; }
+  .main__four {
+    grid-area: 5 / 4 / 8 / 7;
+    border: 1px solid black; }
+  .main__five {
+    grid-area: 8 / 1 / 11 / 4;
+    border: 1px solid black; }
+  .main__six {
+    grid-area: 8 / 4 / 11 / 7;
+    border: 1px solid black; }
+  .main__sub-title {
+    grid-area: 1 / 7 / 2 / 8;
+    border: 1px solid black; }
+  .main__seven {
+    grid-area: 2 / 7 / 6 / 9;
+    border: 1px solid black; }
+  .main__sub-title2 {
+    grid-area: 6 / 7 / 7 / 8;
+    border: 1px solid black; }
+  .main__eight {
+    grid-area: 7 / 7 / 11 / 9;
+    border: 1px solid black; }
